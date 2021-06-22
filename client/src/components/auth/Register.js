@@ -3,9 +3,10 @@ import React, { Fragment,useState } from 'react'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { setAlert } from '../../actions/alert'
+import { register } from '../../actions/auth'
 import PropTypes from 'prop-types';
 
-const Register = ({ setAlert }) => {
+const Register = ({ setAlert, register }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,7 +23,7 @@ const Register = ({ setAlert }) => {
     if(password !== password2){
       setAlert('Password do not match', 'danger');
     } else {
-      setAlert('SUCCESS')
+      register({ name, email, password });
       // const newUser = {
       //   name,
       //   email,
@@ -56,7 +57,6 @@ const Register = ({ setAlert }) => {
             name="name" 
             value={name}
             onChange={e => onChange(e)}
-            required 
           />
         </div>
         <div className="form-group">
@@ -66,7 +66,6 @@ const Register = ({ setAlert }) => {
             name="email" 
             value={email} 
             onChange={e => onChange(e)} 
-            required
           />
           <small className="form-text"
             >This site uses Gravatar so if you want a profile image, use a
@@ -103,6 +102,7 @@ const Register = ({ setAlert }) => {
 
 Register.propTypes = {
   setAlert: PropTypes.func.isRequired,
+  register: PropTypes.func.isRequired
 }
 
-export default connect(null, { setAlert })(Register)
+export default connect(null, { setAlert, register } )(Register)
