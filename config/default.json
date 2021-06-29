@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://kaaner:kaaner123@championes.cznrg.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret": "championes",
+    "githubClientId": "981a9fddc64933373a10",
+    "githubSecret": "eb592f4a88e1e50b678403e1a4289c8089726cee"
+}
