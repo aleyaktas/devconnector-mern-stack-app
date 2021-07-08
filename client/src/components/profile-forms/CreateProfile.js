@@ -79,22 +79,16 @@ const CreateProfile = ({ createProfile, history }) => {
         </div>
         <div className="form-group">
           <input type="text" placeholder="Website" name="website" value={website} onChange={e => onChange(e)} />
-          <small className="form-text"
-            >Could be your own or a company website</small
-          >
+          <small className="form-text"> Could be your own or a company website </small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location} onChange={e => onChange(e)} />
-          <small className="form-text"
-            >City & state suggested (eg. Boston, MA)</small
-          >
+          <small className="form-text"> City & state suggested (eg. Boston, MA) </small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills} onChange={e => onChange(e)}/>
-          <small className="form-text"
-            >Please use comma separated values (eg.
-            HTML,CSS,JavaScript,PHP)</small
-          >
+          <small className="form-text">Please use comma separated values (eg.
+            HTML,CSS,JavaScript,PHP)</small>
         </div>
         <div className="form-group">
           <input
@@ -104,10 +98,8 @@ const CreateProfile = ({ createProfile, history }) => {
             value={githubusername} 
             onChange={e => onChange(e)}
           />
-          <small className="form-text"
-            >If you want your latest repos and a Github link, include your
-            username</small
-          >
+          <small className="form-text">If you want your latest repos and a Github link, include your
+            username</small>
         </div>
         <div className="form-group">
           <textarea placeholder="A short bio of yourself" name="bio" value={bio} onChange={e => onChange(e)}></textarea>

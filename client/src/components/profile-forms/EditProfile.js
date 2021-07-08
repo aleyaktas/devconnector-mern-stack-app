@@ -71,6 +71,7 @@ const EditProfile = ({
   const onSubmit = e => {
     e.preventDefault();
     createProfile(formData,history, true)
+    history.push("/dashboard")
   }
 
   return (
