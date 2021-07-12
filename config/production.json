@@ -1,0 +1,6 @@
+{
+  "mongoURI":"mongodb+srv://aleynaaktas:aleynaaktas@cluster0.cxolp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "081522603aae7ad9ae18",
+  "githubSecret":"c749e87065cfeaa7d7fa12ee86a63222c50e1366 "
+}
